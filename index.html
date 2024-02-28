@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x=icon">
+  <style>
+    #hb{
+      color: rgb(255, 0, 221);
+      font-weight: bolder;
+      background-color: aqua;
+      padding: 5px;
+    }
+    .ok{
+      background-color: burlywood;
+      color: rgb(214, 16, 16);
+   }
+   #ag{
+    color: green;
+   }
+    </style>   
   </head>
   <body>
     <!-- Header section -->
     <header>
-      <p>
+      <p id="hb">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -22,7 +38,7 @@
             fill-rule="evenodd"
             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
           /></svg
-        >&nbsp; Kishor Dendage &nbsp;&nbsp;
+        >&nbsp; <span>Kishor Dendage</span> &nbsp;&nbsp;
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -35,7 +51,7 @@
             fill-rule="evenodd"
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
           /></svg
-        >&nbsp; 9765 0627 18 &nbsp;&nbsp;
+        >&nbsp; <span >9765 0627 18</span> &nbsp;&nbsp;
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -48,34 +64,37 @@
             d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
           />
         </svg>
-        Dendagekishor19@gmail.com &nbsp;&nbsp;
+        <span>Dendagekishor19@gmail.com </span>&nbsp;&nbsp;
         
-        <a href="assets/resume.pdf" download><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+        <a href="assets/resume.pdf" download id="resume"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
           <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0"/>
-        </svg> RESUME </a>
+        </svg><span>RESUME</span></a>
       </p>
       &nbsp;
     </header>
+    <hr>
 
     <!-- Navigation Section -->
-    <nav>
-      <u><a href="#home">HOME</a></u>
+      <nav>
+                         <u><a href="#home">HOME</a></u>
       &nbsp;&nbsp;&nbsp; <u><a href="#techStack">TECH STACK</a></u>
       &nbsp;&nbsp;&nbsp; <u><a href="#project">PROJECTS</a></u>
       &nbsp;&nbsp;&nbsp; <u><a href="#education">EDUCATION</a></u>
       &nbsp;&nbsp;&nbsp; <u><a href="personalDetails.html">PERSONAL DETAILS</a></u>
       &nbsp;&nbsp;&nbsp; <u><a href="others.html">OTHERS</a></u>
     </nav>
-
+    <hr>
     <!-- Main Section -->
-    <section id="home">
+    <section></section>
+      <h2 class="ok">Carrier Objectives</h2>
+      <p>TO WORK IN ORGINIZATION WHERE I CAN LEARN AND GROW MY SKILL AND HELP ORGANIZATIONAL GROWTH</p>
       <!-- Home section -->
-      <section id="home">
-      <h2>Professional Summary</h2>
+     
+      <h2 class="ok">Professional Summary</h2>
       <ul>
-        <li>Having 1 years of experience in developing Single page Web Applications using Angular 8,HTML5</li><br>
+        <li>Having 1 years of experience in developing Single page Web Applications using <span id="ag">Angular 8</span> ,HTML5</li><br>
         <li>Experience on working with version control system - GIT and GitHub</li><br>
-        <li>Experience working with JIRA for user stories and bug tracking</li><br>
+        <li> Experience working with JIRA for user stories and bug tracking</li><br>
         <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
         <li>Working exposure on ID's like VS Code and Notepad++</li><br>
         <li>Good working experience under Agile methodologies environment</li><br>
@@ -83,44 +102,44 @@
         <li>Knowledge of NodeJS</li><br>
         <li>Ability to work with people at all levels in the program</li><br>
       </ul>
-    </section>
-    <hr>
-    </section>
-    <!-- Technology stack section -->
-    <section id="techStack">
-      <h2>My Technology stack </h2>
-<table border="1">
+        
+          <hr>
+        </section>
+        <!-- Technology stack section -->
+        <section id="techStack">
+        <h2>My Technology stack </h2>
+        <table border="1">
   <tr>
     <td>Sr.No</td>
     <td>Technology Stack</td>
     <td>Rating</td>
   </tr>
   <tr>
-  <td>1</td>
-  <td>HTML</td>
-  <td>4</td>
+    <td>1</td>
+    <td>HTML</td>
+    <td>4</td>
 </tr>
 <tr>
-  <td>2</td>
-  <td>CSS</td>
-  <td>4</td>
+    <td>2</td>
+    <td>CSS</td>
+    <td>4</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Javascript</td>
-<td>4</td>
+    <td>3</td>
+    <td>Javascript</td>
+    <td>4</td>
 </tr>
 <tr>
-  <td>4</td>
-  <td>Angular</td>
-  <td>3</td>
+    <td>4</td>
+    <td>Angular</td>
+    <td>3</td>
 </tr>
 </table>
     </section>
     <hr>
 
      <!-- Project Section -->
-    <section id="project">
+    <section id="project">s
 <h2><strong>Project Details</strong></h2>
 <img src="assets/developer.PNG" alt="">
 <hr>
