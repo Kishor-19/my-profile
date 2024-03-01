@@ -15,13 +15,10 @@
         color: orange;
         font-weight: bolder;
       }
-      .heading{
-        color: cadetblue;
-        font-style: italic;
-      }
-      .header-info{
+            .header-info{
         margin-right: 40px;
         margin-left: 10px;
+        font-family: "Roboto", sans-serif;
       }
       #resume-text{
         margin-left: 10px;
@@ -29,8 +26,12 @@
       .mk{
         margin-right: 15px;
       }
+      .ok{
+        font-family: "Roboto", sans-serif;
+      }
       .list{
         margin-bottom: 10px;
+        font-family: "Poppins", sans-serif;
       }
      .nk{
       padding-right: 15%;
@@ -40,14 +41,28 @@
      .pd{
       padding-right: 70%;
       margin-right: 20px;
+      font-family: "Poppins", sans-serif;
      }
-     table tr {
-            padding: 10px;
-        }
+     table, tr, th, td {
+        border: 2px solid rgb(216, 186, 131);
+        border-collapse: collapse;
+      }
+      td,th{
+        padding: 10px;
+      }
         .pr{
           margin-right: 10px;
+          font-family: "Roboto", sans-serif;
         }
-            </style>  
+        .ft{
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+        }
+        .pop{
+          font-family: "Poppins", sans-serif;
+        }
+       </style>  
   </head>
   <body>
     <!-- Header section -->
@@ -59,7 +74,10 @@
       <span class="header-info">9765 0627 18  </span>  
       <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
       <span class="header-info">Dendagekishor19@gmail.com </span> 
-      <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
+      <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">      
 </header>
     <hr>
 
@@ -81,32 +99,33 @@
     <!-- Main Section -->
     <section></section>
       <h2 class="ok">Carrier Objectives</h2>
-      <p>TO WORK IN ORGINIZATION WHERE I CAN LEARN AND GROW MY SKILL AND HELP ORGANIZATIONAL GROWTH</p>
+      <p class="pop">TO WORK IN ORGINIZATION WHERE I CAN LEARN AND GROW MY SKILL AND HELP ORGANIZATIONAL GROWTH</p>
       <!-- Home section -->
 
            <h2 class="ok">Professional Summary</h2>
       <ul>
-        <li>Having 1 years of experience in developing Single page Web Applications using <span id="ag">Angular 8</span> ,HTML5</li><br>
-        <span></span><li>Experience on working with version control system - GIT and GitHub</li><br>
-        <li> Experience working with JIRA for user stories and bug tracking</li><br>
-        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
-        <li>Working exposure on ID's like VS Code and Notepad++</li><br>
-        <li>Good working experience under Agile methodologies environment</li><br>
-        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li><br>
-        <li>Knowledge of NodeJS</li><br>
-        <li>Ability to work with people at all levels in the program</li><br>
+        <li class="pop">Having 1 years of experience in developing Single page Web Applications using <span id="ag">Angular 8</span> ,HTML5</li><br>
+        <li class="pop">Experience on working with version control system - GIT and GitHub</li><br>
+        <li class="pop"> Experience working with JIRA for user stories and bug tracking</li><br>
+        <li class="pop">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
+        <li class="pop">Working exposure on ID's like VS Code and Notepad++</li><br>
+        <li class="pop">Good working experience under Agile methodologies environment</li><br>
+        <li class="pop">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li><br>
+        <li class="pop">Knowledge of NodeJS</li><br>
+        <li class="pop">Ability to work with people at all levels in the program</li><br>
       </ul>
         
           <hr>
         </section>
         <!-- Technology stack section -->
         <section id="techStack">
-        <h2>My Technology stack </h2>
-        <table border="1">
+        <h2 class="ok">My Technology stack </h2>
+        <table>
   <tr>
-    <td>Sr.No</td>
-    <td>Technology Stack</td>
-    <td>Rating</td> 
+    <thead>
+    <th>Sr.No</th>
+    <th>Technology Stack</th>
+    <th>Rating</th> </thead>
   </tr>
   <tr>
     <td>1</td>
@@ -134,7 +153,7 @@
 
      <!-- Project Section -->
     <section id="project">s
-<h2><strong>Project Details</strong></h2>
+<h2 class="ok"><strong>Project Details</strong></h2>
 <img src="assets/developer.PNG" alt="">
 <hr>
 <p>
@@ -143,7 +162,7 @@
     <strong>Team Size:</strong>06<strong> Duration:</strong>2021-1<sup>st</sup> <i>July till <u>present</u></i><br><br>
     <strong>Project Description:</strong>This project is mainly used for student management in college, where it helps to manage 
     students <br>record like students registration, students update, and to see all the list of the academic activities like score card and attendance
-    <hr><strong><h2>Roles and Responsibilities</h2></strong>
+    <hr><strong><h2 class="ok">Roles and Responsibilities</h2></strong>
     <ul>
         
         <li class="list">Designed and Implemented the user interface using HTML5 and CSS3</li>
@@ -161,7 +180,7 @@
 
     <!-- Education Section -->
     <section id="education">
-      <h2>Education Details</h2>
+      <h2 class="ok">Education Details</h2>
       <table border="1" style="padding: 20px;">
         <tr>
           <th >Qualification</th>
@@ -203,7 +222,7 @@
       <i class="fa fa-facebook-square" aria-hidden="true" class="mp"></i>
       <span class="mk"></span>
     </footer> <br>
-    <section>
+    <section class="ft">
       <!-- Copy write section -->
       Copyright &copy;2024 Kishor Dendage
     </section>
