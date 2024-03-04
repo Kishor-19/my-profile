@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card</title>
+       <style>
+        
+#heading {
+    letter-spacing: 7px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    background-color: rgb(4, 248, 248);
+}
+
+#container {
+    box-shadow: 10px 10px 5px 0px rgb(29, 24, 29);
+    -webkit-box-sizing: 10px 10px 5px 0px rgb(173, 100, 100);
+    -moz-box-sizing: 10px 10px 5px 0px rgb(159, 120, 120);
+    background-color: rgb(40, 218, 144);
+    width: 690px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 18px;
+}
+
+#text {
+    display: inline-block;
+    margin: 10px;
+}
+
+#text li {
+    list-style-type: none;
+    font-weight: bold;
+    font-style: large;
+    margin: 10px;
+}
+
+#text li::marker{
+    padding: 10px;
+    content: "✍️  ";
+
+}
+
+#image {
+    display: inline;
+    margin-left: 20px;
+}
+
+#box{
+    box-shadow: 10px 10px 5px 0px rgb(170, 133, 172);
+    -webkit-box-sizing: 10px 10px 5px 0px rgb(209, 164, 164);
+    -moz-box-sizing: 10px 10px 5px 0px rgb(201, 162, 162);
+    background-color: rgb(20, 16, 16);
+    border-radius: 40px;
+    width: 690px;
+    margin: 20px auto;
+    padding: 18px;
+    color: rgb(191, 202, 202);
+}
+
+#arrow{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+
+#header{
+    display: inline-block;
+}
+
+#header li{
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bold;
+    font-style: large;
+}
+
+#content{
+    list-style-type: none;
+    margin-top: 25px;
+    font-weight: bolder;
+    font-style: larger;
+    font-size: 30px;
+    color: rgb(6, 149, 149);
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- <h1 id="heading">Cards</h1> -->
+    <section id="container">
+        <h2 style="text-align: center; padding-left: 125px;">Compare Text Online</h2>
+        <section id="image">
+            <img src="sfteng.jpeg" alt="" width="250" height="230">
+            <ul id="text">
+                <li>Compare text online free</li>
+                <li>Supports large file comparison</li>
+                <li>Ignore order and namespaces</li>
+                <li>Side by side diff view</li>
+                <li>Get results in tabular format for quick reference</li>
+                <li>Text diff tool</li>
+                <li>REST API</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="box">
+        <ul id="content">
+            <li><strong>2 Stocks</strong></li>
+            <li><strong>Recommendation</strong></li>
+            <li><strong>Weekly</strong></li>
+            
+        </ul>
+        <ul id="header">
+            <li>Midcap Stocks Gaining</li>
+            <li>Momentum after 30-40% fall</li>
+            <li>From 52 wek High</li>
+        </ul>
+        <img style="padding-left: 100px;" src="assets/developer.PNG" alt="Arrow" width="180" height="130">
+
+    </section>
+</body>
+
+</html>
