@@ -6,29 +6,101 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x=icon">
+    <link rel="stylesheet" href="@import url'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap;">
+    <link rel="stylesheet" href="style.css">
     <style>
-      header{
-        padding: 20px;
-        background-color: rgb(216, 244, 245);
+ /* Universal Selector  */
+     *{
+       margin: 0;
+       box-sizing: border-box;
+       list-style-type: none;
       }
-      #resume{
-        color: orange;
-        font-weight: bolder;
-      }
-            .header-info{
+.header-info{
         margin-right: 40px;
         margin-left: 10px;
-        font-family: "Roboto", sans-serif;
+        width: 100px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      
       }
-      #resume-text{
-        margin-left: 10px;
+header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgb(216, 244, 245);
+      padding: 20px;
+      border-bottom: 2px solid black;
+      font-weight: bolder;
+      font-size: large;
+      
+    }
+body {
+      margin-top: 6%; 
+      margin-bottom: 5%;
+     
+    }
+#navSection {
+  padding: 10px 10px 10px 10px ;
+  text-align: right;
+  display: inline;
+  margin-top: 5px; 
+  background-color: burlywood;
+ }
+#resume{ 
+     color: orange;
+     font-weight: bolder;
+    }
+#resume-text{
+    margin-left: 10px;
+    }
+#space{
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: larger;
+    font-weight: bold;
+     }         
+#text li::marker{
+    padding: 10px;
+    content: "✍️";
+  }
+
+.main{
+      margin-top: 15px;
+     }
+.career{
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     
+#icon{
+  position:fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 100px; 
+  color: #2b4ff0; 
+  
+}
+.ok{
+        margin-left: 5px;
+        font-style: italic;
+        color: brown;
+        margin-bottom: 10px;
+     }
+#table{
+        margin-left: 20px;
+        text-align-last: center;
+        border: 2px;
+}
+table, tr, th, td {
+        border: 2px solid rgb(216, 186, 131);
+        border-collapse: collapse;
+        margin-bottom: 10px;
       }
-      .mk{
-        margin-right: 15px;
+     .mk{
+     margin-right: 15px;
       }
-      .ok{
-        font-family: "Roboto", sans-serif;
-      }
+     
       .list{
         margin-bottom: 10px;
         font-family: "Poppins", sans-serif;
@@ -43,10 +115,7 @@
       margin-right: 20px;
       font-family: "Poppins", sans-serif;
      }
-     table, tr, th, td {
-        border: 2px solid rgb(216, 186, 131);
-        border-collapse: collapse;
-      }
+     
       td,th{
         padding: 10px;
       }
@@ -59,14 +128,25 @@
           font-weight: 800;
           font-style: normal;
         }
-        .pop{
-          font-family: "Poppins", sans-serif;
+        
+        .org{
+          list-style-type: circle;
         }
-       </style>  
+        .roles{
+          list-style-type: lower-alpha;
+        }
+        .roles li{
+          padding-top: 5px;
+        }
+        .miss{
+          margin: 50px 50px 50px 50px;
+        }
+       
+    </style>
   </head>
   <body>
     <!-- Header section -->
-    <!-- Header Section -->
+    <section id="header">
     <header>
       <i class="fa fa-user fa-lg" aria-hidden="true"></i>
       <span class="header-info">Kishor Dendage </span> 
@@ -74,97 +154,98 @@
       <span class="header-info">9765 0627 18  </span>  
       <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
       <span class="header-info">Dendagekishor19@gmail.com </span> 
-      <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>  
+      <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+      <span id="resume-text">RESUME</span>  </a>  
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">      
-</header>
-    <hr>
-
+    </header></section>
+    
     <!-- Navigation Section -->
-      <nav>
-      <u><a href="#home">HOME</a></u>
-      <span class="pr"></span>
-      <u><a href="#techStack">TECH STACK</a></u>
-      <span class="pr"></span>
-      <u><a href="#project">PROJECTS</a></u>
-      <span class="pr"></span>
-      <u><a href="#education">EDUCATION</a></u>
-      <span class="pr"></span>
-      <u><a href="personalDetails.html">PERSONAL DETAILS</a></u>
-      <span class="pr"></span>
-      <u><a href="others.html">OTHERS</a></u>
-    </nav>
-    <hr>
-    <!-- Main Section -->
-    <section></section>
-      <h2 class="ok">Carrier Objectives</h2>
-      <p class="pop">TO WORK IN ORGINIZATION WHERE I CAN LEARN AND GROW MY SKILL AND HELP ORGANIZATIONAL GROWTH</p>
-      <!-- Home section -->
-
-           <h2 class="ok">Professional Summary</h2>
-      <ul>
-        <li class="pop">Having 1 years of experience in developing Single page Web Applications using <span id="ag">Angular 8</span> ,HTML5</li><br>
-        <li class="pop">Experience on working with version control system - GIT and GitHub</li><br>
-        <li class="pop"> Experience working with JIRA for user stories and bug tracking</li><br>
-        <li class="pop">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
-        <li class="pop">Working exposure on ID's like VS Code and Notepad++</li><br>
-        <li class="pop">Good working experience under Agile methodologies environment</li><br>
-        <li class="pop">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li><br>
-        <li class="pop">Knowledge of NodeJS</li><br>
-        <li class="pop">Ability to work with people at all levels in the program</li><br>
-      </ul>
-        
-          <hr>
+    <section id="navSection">
+        <a href="#home" id="space">HOME</a>
+        <a href="#techStack" id="space">TECH STACK</a>
+        <a href="#project" id="space">PROJECTS</a>
+        <a href="#education" id="space">EDUCATION</a>
+        <a href="personalDetail.html" target="_blank" id="space">PERSONAL DETAILS</a>
+        <a href="others.html" target="_blank" id="space">OTHERS</a>
         </section>
-        <!-- Technology stack section -->
-        <section id="techStack">
+        
+
+  <!-- icon -->
+  <section id="icon">
+    <i class="fa fa-commenting" aria-hidden="true"></i>
+  </section>
+    
+    <!-- Main Section -->
+    
+    <section class="main">
+      <h2 class="ok">Carrier Objectives</h2>
+      <p class="career">TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILL AND HELP ORGANIZATIONAL GROWTH</p>
+    </section>
+
+      <!-- Home section -->
+      <h2 class="ok">Professional Summary</h2>
+      <ul id="text">
+        <li>Having 1 years of experience in developing Single page Web Applications using <span id="ag">Angular 8</span> ,HTML5</li><br>
+        <li>Experience on working with version control system - GIT and GitHub</li><br>
+        <li>Experience working with JIRA for user stories and bug tracking</li><br>
+        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
+        <li>Working exposure on ID's like VS Code and Notepad++</li><br>
+        <li>Good working experience under Agile methodologies environment</li><br>
+        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li><br>
+        <li>Knowledge of NodeJS</li><br>
+        <li>Ability to work with people at all levels in the program</li><br>
+      </ul>
+        <hr>
+
+  <!-- Technology stack section -->
+  <section>
         <h2 class="ok">My Technology stack </h2>
-        <table>
-  <tr>
+        <table border="1" id="table">
+   <tr>
     <thead>
     <th>Sr.No</th>
     <th>Technology Stack</th>
     <th>Rating</th> </thead>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
     <td>1</td>
     <td>HTML</td>
     <td>4</td>
-</tr>
-<tr>
+   </tr>
+   <tr>
     <td>2</td>
     <td>CSS</td>
     <td>4</td>
-</tr>
-<tr>
+   </tr>
+   <tr>
     <td>3</td>
     <td>Javascript</td>
     <td>4</td>
-</tr>
-<tr>
+   </tr>
+   <tr>
     <td>4</td>
     <td>Angular</td>
     <td>3</td>
-</tr>
-</table>
-    </section>
+   </tr>
+   </table>
+  </section>
     <hr>
 
-     <!-- Project Section -->
-    <section id="project">s
-<h2 class="ok"><strong>Project Details</strong></h2>
-<img src="assets/developer.PNG" alt="">
-<hr>
+ <!-- Project Section -->
+  <section id="project">
+     <h2 class="ok"><strong>Project Details</strong></h2>
+     <img src="assets/developer.PNG" alt="">
+     <hr>
 <p>
     <strong>Name:<u>Students Management</u><br></strong><br>
     <strong><u>Environment:</strong>Angular , React, java, Javascript, HTML, CSS, Bootstrap, Github, Agile and JIRA</u><br><br>
     <strong>Team Size:</strong>06<strong> Duration:</strong>2021-1<sup>st</sup> <i>July till <u>present</u></i><br><br>
     <strong>Project Description:</strong>This project is mainly used for student management in college, where it helps to manage 
     students <br>record like students registration, students update, and to see all the list of the academic activities like score card and attendance
-    <hr><strong><h2 class="ok">Roles and Responsibilities</h2></strong>
-    <ul>
-        
+    <hr>
+    <strong><h2 class="ok">Roles and Responsibilities</h2></strong>
+    <ol class="roles">
         <li class="list">Designed and Implemented the user interface using HTML5 and CSS3</li>
         <li class="list">Work closely with backend developers for code integration </li>
         <li class="list">Identifying and troubleshooting issues in front end codebase</li>
@@ -172,8 +253,7 @@
         <li class="list">Used JIRA for bug tracking</li>
         <li class="list">Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospective meetings</li>
         <li class="list">involved in fixing technical issues in production environment</li>
-        
-    </ul>
+    </ol>
 </p>
     </section>
     <hr>
@@ -181,7 +261,7 @@
     <!-- Education Section -->
     <section id="education">
       <h2 class="ok">Education Details</h2>
-      <table border="1" style="padding: 20px;">
+      <table border="1" padding: 20px;">
         <tr>
           <th >Qualification</th>
           <th>School/College</th>
@@ -191,7 +271,7 @@
         </tr>
         <tr>
           <td>BE</td>
-          <td>G.S.Moze College of Engg</td>
+          <td>G.S.Moze College of Eng</td>
           <td>SPPU</td>
           <td>2024</td>
           <td>60%</td>
@@ -212,19 +292,21 @@
         </tr>
       </table>
       <hr>
-    </section>
-    <!-- Footer section -->
-    <footer>
+  </section>
+
+<!-- Footer section -->
+   <footer>
      <i class="fa fa-instagram" aria-hidden="true"></i>
-     <span class="mk"></span>
+      <span class="mk"></span>
       <i class="fa fa-linkedin-square" aria-hidden="true"></i>
       <span class="mk"></span>
       <i class="fa fa-facebook-square" aria-hidden="true" class="mp"></i>
       <span class="mk"></span>
-    </footer> <br>
+   </footer> <br>
     <section class="ft">
+
       <!-- Copy write section -->
-      Copyright &copy;2024 Kishor Dendage
+      Copyright &copy;2024 Kishor Dendage  personal Detail
     </section>
   </body>
 </html>
