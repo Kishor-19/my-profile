@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber</title>
+    <style>
+       .container{
+        width: 30%;
+        height: 70%;
+        border: 1px solid rgb(153, 153, 202);
+        background-color: rgb(238, 221, 200);
+        /* box-shadow: 30px black; */
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); 
+       }
+       .sub{
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: larger;
+        font-weight: bold;
+        position: absolute;
+        }
+       .inercon{
+        width:90%;
+        height: 35%;
+        border: 2px solid blue;
+        background-color: rgb(79, 164, 204);
+       /* box-shadow: 30px black; */
+        border-radius: 10px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);  */
+       }
+       #star{
+        color: red;
+       }
+       #input{
+        border-radius: 2px;
+       border: 2px solid black;
+       /* padding-left: 50%; */
+       }
+       .email{
+        margin-top: 55%;
+        margin-left: 20px;
+       }
+       #unsub{
+        border-radius: 2px;
+       border: 2px solid black;
+      
+       position: absolute;
+       }
+       #space{
+        margin-top: 20px;
+       }
+       #button{
+        left:75%;
+        top: 85%;
+        position: absolute;
+        border: 2px 2px 0px 0px  solid rgb(25, 165, 118);
+        background-color: rgb(201, 188, 188);
+        border-inline-color: rgb(120, 120, 197);
+       }
+    </style>
+</head>
+<body>    
+   <div class="container">
+    <label for="" class="sub">Subscriber</label><br>
+   <hr>
+   <div class="inercon">
+<section>
+    <p>&nbsp;&nbsp;We'r sorry to say you, but hey , no hard feelings, &nbsp;hopefully we will,see you back one day. <br>
+        &nbsp; &nbsp;Please fill in your email address in order to unsubscribe &nbsp;from the list. <br> 
+        &nbsp; &nbsp;You will receive, just to make sure this is not an &nbsp;accident or somebody else tries to unsubscribe you. </p>
+</section>
+   </div>
+   <!-- <section>
+    <label for="">Email</label>
+    <input type="text">
+   </section> -->
+<section class="email"><span><label for="">Email <span id="star">*</span></label><br>
+   <span id="input"><input type="text"></span></span><br>
+   <span id="space"><label for="">Unsubscribe reason</label></span><br>
+   <span id="unsub"><input type="text" ></span> 
+</section>
+<section>
+    <span><button type="button" id="button">Unsubscribe</button></span>
+</section>
+   </div>
+</body>
+</html>
